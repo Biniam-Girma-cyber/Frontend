@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DataSync Pro | Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">D</div>
+                <span>DataSync Pro</span>
+            </div>
+
+            <nav class="sidebar-nav">
+
+                <a href="index.html" class="nav-item active">
+                    <span class="nav-icon"><i class="fa-solid fa-house"></i></span>
+                    Dashboard
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon"><i class="fa-solid fa-table-cells-large"></i></span>
+                    Tables
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon"><i class="fa-solid fa-credit-card"></i></span>
+                    Billing
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    RTL
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon"><i class="fa-solid fa-user"></i></span>
+                    Profile
+                </a>
+
+                <a href="signin.html" class="nav-item">
+                    <span class="nav-icon"><i class="fa-solid fa-lock"></i></span>
+                    Sign In
+                </a>
+
+                <a href="signup.html" class="nav-item">
+                    <span class="nav-icon"><i class="fa-solid fa-paper-plane"></i></span>
+                    Sign Up
+                </a>
+
+            </nav>
+
+            <div class="help-card">
+                <div class="help-icon"><i class="fa-solid fa-circle-question"></i></div>
+
+                <div>
+                    <h4>Need help?</h4>
+                    <p>Check our support center</p>
+                    <a href="#">CONTACT SUPPORT</a>
+                </div>
+            </div>
+
+        </aside>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <main class="main-content">
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav">
+
+                <div class="mobile-logo">
+                    <div class="logo-icon">D</div>
+                    <span>DataSync Pro</span>
+                </div>
+
+                <div class="mobile-icons">
+                    <span><i class="fa-solid fa-house"></i></span>
+                    <span><i class="fa-solid fa-table-cells-large"></i></span>
+                    <span><i class="fa-solid fa-credit-card"></i></span>
+                    <span><i class="fa-solid fa-globe"></i></span>
+                    <span><i class="fa-solid fa-user"></i></span>
+                    <span><i class="fa-solid fa-lock"></i></span>
+                    <span><i class="fa-solid fa-paper-plane"></i></span>
+                </div>
+
+            </div>
+
+
+            <!-- ================= TOP HEADER ================= -->
+            <header class="top-header">
+
+                <div class="search-box">
+                    <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="search" placeholder="Type here...">
+                </div>
+
+                <div class="header-actions">
+
+                    <div class="user-info">
+                        <img src="assets/images/mark_Johnson.jpg" alt="Mark Johnson">
+
+                        <span>Mark Johnson</span>
+                    </div>
+
+                    <button class="header-icon" aria-label="Settings"><i class="fa-solid fa-gear"></i></button>
+
+                    <button class="header-icon notification" aria-label="Notifications">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="badge">3</span>
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- ================= PAGE TITLE ================= -->
+            <section class="page-heading">
+
+                <div>
+                    <p class="breadcrumb">Pages / Dashboard</p>
+                    <h1>Dashboard</h1>
+                </div>
+
+                <div class="status">
+                    <span></span>
+                    System Operational
+                </div>
+
+            </section>
+
+
+            <!-- ================= METRIC CARDS ================= -->
+            <section class="metrics-grid">
+
+                <article class="metric-card">
+
+                    <div class="metric-info">
+                        <p>Today's Money</p>
+                        <h2>$53,000</h2>
+                        <span class="positive">+55%</span>
+                        <small>since yesterday</small>
+                    </div>
+
+                    <div class="metric-icon wallet"><i class="fa-solid fa-wallet"></i></div>
+
+                </article>
+
+
+                <article class="metric-card blue">
+
+                    <div class="metric-info">
+                        <p>Today's Users</p>
+                        <h2>2,300</h2>
+                        <span class="positive">+3%</span>
+                        <small>since last week</small>
+                    </div>
+
+                    <div class="metric-icon"><i class="fa-solid fa-globe"></i></div>
+
+                </article>
+
+
+                <article class="metric-card green">
+
+                    <div class="metric-info">
+                        <p>New Clients</p>
+                        <h2>+3,052</h2>
+                        <span class="positive">+5%</span>
+                        <small>since last month</small>
+                    </div>
+
+                    <div class="metric-icon"><i class="fa-solid fa-file-lines"></i></div>
+
+                </article>
+
+
+                <article class="metric-card purple">
+
+                    <div class="metric-info">
+                        <p>Total Sales</p>
+                        <h2>$173,000</h2>
+                        <span class="positive">+8%</span>
+                        <small>since last month</small>
+                    </div>
+
+                    <div class="metric-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+
+                </article>
+
+            </section>
+
+
+            <!-- ================= MIDDLE CARDS ================= -->
+            <section class="middle-grid">
+
+                <!-- Welcome -->
+                <article class="card welcome-card">
+
+                    <div class="welcome-content">
+
+                        <p class="eyebrow">WELCOME BACK</p>
+
+                        <h2>Mark Johnson</h2>
+
+                        <p>
+                            It's great to see you again. Check your latest
+                            statistics and manage your dashboard from here.
+                        </p>
+
+                        <a href="#" class="primary-btn">
+                            Tap to record <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                    <img src="assets/images/mark_Johnson.jpg" alt="Mark Johnson" class="welcome-avatar">
+
+                </article>
+
+
+                <!-- Feedback -->
+                <article class="card feedback-card">
+
+                    <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+
+                    <p class="feedback-text">
+                        Excellent service and intuitive platform!
+                        Highly recommend.
+                    </p>
+
+                    <div class="feedback-author">
+                        - Sarah L.
+                    </div>
+
+                </article>
+
+
+                <!-- Referrals -->
+                <article class="card referrals-card">
+
+                    <div class="card-header">
+                        <div>
+                            <p class="eyebrow">TEAM</p>
+                            <h3>Recent Referrals</h3>
+                        </div>
+
+                        <button class="dots" aria-label="More options"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+
+                    <img src="assets/images/recent_referrals.jpg" alt="Recent referrals" class="referral-image">
+
+                    <p class="muted">
+                        People recently referred to your team
+                    </p>
+
+                    <ul class="referral-list">
+                        <li>John Carter</li>
+                        <li>Emily Davis</li>
+                        <li>Michael Brown</li>
+                    </ul>
+
+                </article>
+
+            </section>
+
+
+            <!-- ================= BOTTOM GRID ================= -->
+            <section class="bottom-grid">
+
+                <!-- Performance -->
+                <article class="card performance-card">
+
+                    <img src="assets/images/global_performance_summary.jpg" alt="Global performance"
+                        class="performance-image">
+
+                    <div class="performance-content">
+
+                        <p class="eyebrow">PERFORMANCE</p>
+
+                        <h2>Global Performance Summary</h2>
+
+                        <p>
+                            Q3 performance continues to show strong growth
+                            across the organization. Customer activity,
+                            sales performance, and team engagement have
+                            improved compared with the previous quarter.
+                        </p>
+
+                        <a href="#" class="text-link">
+                            View full report <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Active Team -->
+                <article class="card team-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <p class="eyebrow">TEAM</p>
+                            <h3>Active Team Members</h3>
+                        </div>
+
+                        <span class="active-count">4 Active</span>
+
+                    </div>
+
+
+                    <div class="team-grid">
+
+                        <div class="team-member">
+                            <img src="assets/images/Alica_M.jpg" alt="Alice M.">
+                            <div>
+                                <h4>Alice M.</h4>
+                                <span>
+                                    <i></i>
+                                    Active Now
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div class="team-member">
+                            <img src="assets/images/Bob_S.jpg" alt="Bob S.">
+                            <div>
+                                <h4>Bob S.</h4>
+                                <span>
+                                    <i></i>
+                                    Active Now
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div class="team-member">
+                            <img src="assets/images/Charli_H.jpg" alt="Charlie H.">
+                            <div>
+                                <h4>Charlie H.</h4>
+                                <span>
+                                    <i></i>
+                                    Active Now
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div class="team-member">
+                            <img src="assets/images/Diana W.jpg" alt="Diana W.">
+                            <div>
+                                <h4>Diana W.</h4>
+                                <span>
+                                    <i></i>
+                                    Active Now
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <footer>
+                © 2026 DataSync Pro. All rights reserved.
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

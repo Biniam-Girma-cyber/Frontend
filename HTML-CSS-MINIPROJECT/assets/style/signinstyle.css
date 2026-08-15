@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+:root{
+  --bg:#111;
+  --card:#1e1e1e;
+  --primary:#3b82f6;
+  --text:#fff;
+  --muted:#94a3b8;
+  --radius:16px
+}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0
+}
+body{
+  min-height:100vh;
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Inter',sans-serif
+}
+a{
+  color:var(--primary);
+  text-decoration:none
+}
+.signin-page{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:62.5% 37.5%
+}
+.signin-image{
+  min-height:100vh;
+  position:relative;
+  background-image:url("../images/office-photo.png");
+  background-size:cover;
+  background-position:center;
+}
+.image-overlay{
+  position:absolute;
+  inset:0;
+  padding:40px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.2))
+}
+.brand{display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:700;font-size:17px
+}
+.brand-icon{width:38px;
+  height:38px;
+  display:grid;
+  place-items:center;
+  background:var(--primary);
+  border-radius:11px
+}
+.image-text{display:none}
+.signin-form-side{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 70px;
+  background:#111}
+.signin-card{
+  width:100%;
+  max-width:430px
+}
+.eyebrow{display:none}
+.signin-card h1{
+  font-size:40px;
+  margin-bottom:32px
+}
+.subtitle{display:none}
+.form-group{margin-bottom:17px}
+.form-group label{
+  display:block;
+  font-size:13px;
+  margin-bottom:7px
+}
+.form-group input{
+ width:100%;
+ height:45px;
+ padding:0 12px;
+ background:#242424;
+ 
+ border:1px solid #4b4b4b;
+ border-radius:11px;
+ color:#fff;
+ outline:none;
+ font-size:14px
+}
+.form-group input:focus{
+  border-color:var(--primary)
+}
+.form-group input::placeholder{color:#8c8c8c}
+.form-options{display:flex;
+  align-items:center;
+  gap:9px;
+  margin:2px 0 31px;
+  font-size:13px
+}
+.remember{display:flex;
+  align-items:center;
+  gap:9px;
+  color:#ddd
+}
+.remember input{width:30px;
+  height:16px;
+  appearance:none;
+  background:#3a3a3a;
+  border-radius:20px;
+  position:relative;
+  cursor:pointer
+}
+.remember input:before{
+  content:"";
+  position:absolute;
+  top:2px;
+  left:2px;
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:#fff;
+  transition:0.2s
+}
+.remember input:checked{
+  background:var(--primary)
+}
+.remember input:checked:before{left:16px}
+.signin-btn{
+  width:100%;
+  height:45px;
+  border:0;
+  border-radius:9px;
+  background:linear-gradient(90deg,#1976f3,#3dbde9);
+  color:#fff;
+  font-weight:600;
+  box-shadow:0 0 18px rgba(59,130,246,.35)
+}
+.signin-btn:hover{filter:brightness(1.08)}
+.signup-text{
+  text-align:center;
+  color:#ddd;
+  font-size:13px;
+  margin-top:18px 
+}
+.signup-text a:first-of-type{
+  display:block;
+  margin-bottom:36px
+}
+.signin-mobile-header{
+  display:none
+}
+@media(max-width:768px){
+ body{background:#111}
+ .signin-page{display:block}
+ .signin-image{
+  height:300px;
+  min-height:300px;
+  border-radius:0 0 22px 22px
+}
+ .image-overlay{padding:15px}
+ .brand,.image-text{display:none}
+ .signin-mobile-header{
+  display:flex;
+  position:absolute;
+  z-index:10;
+  top:12px;
+  left:12px;
+  right:12px;
+  height:48px;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 14px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:13px;
+  background:rgba(17,17,17,.78);
+  backdrop-filter:blur(10px);
+  font-size:15px
+ }
+ .signin-form-side{
+  position:relative;
+  margin-top:-38px;
+  padding:0 12px 25px;
+  display:block;
+  background:transparent
+}
+ .signin-card{
+  max-width:none;
+  padding:25px 20px 28px;
+  border-radius:17px;
+  background:var(--card);
+  border:1px solid #2c2c2c
+}
+ .signin-card h1{
+  font-size:30px;
+  margin-bottom:28px
+}
+ .form-group{
+  margin-bottom:18px
+}
+ .form-group input{height:48px}
+ .form-options{margin-bottom:27px}
+ .signup-text{margin-top:18px}
+ .signup-text a:first-of-type{margin-bottom:26px}
+}
+
+/* Precise reference icons */
+.mobile-nav-icon { 
+    position:relative;
+    border:0; 
+    background:transparent; 
+    color:#d7dbe2; 
+    font-size:16px; 
+    width:28px;
+    height:28px;
+    display:grid; 
+    place-items:center; 
+    cursor:pointer;
+  }
+.notification-grid .mobile-badge { 
+  position:absolute;
+   top:-1px; 
+   right:-2px; 
+   width:7px; 
+   height:7px; 
+   border-radius:50%; 
+   background:#3b82f6; 
+   border:1px solid #111; 
+   font-size:0; 
+  }

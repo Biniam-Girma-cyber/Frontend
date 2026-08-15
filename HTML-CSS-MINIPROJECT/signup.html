@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DataSync Pro | Sign Up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/style/signupstyle.css">
+
+</head>
+
+
+<body>
+
+    <div class="signup-page">
+
+        <!-- ================= IMAGE ================= -->
+
+        <section class="signup-image">
+
+            <div class="image-content">
+
+                <div class="brand">
+                    <div class="brand-icon">D</div>
+                    <span>DataSync Pro</span>
+                </div>
+
+                <div class="image-message">
+
+                    <p>BUILD BETTER TOGETHER</p>
+
+                    <h1>
+                        Your team's data,
+                        <br>
+                        all in one place.
+                    </h1>
+
+                    <p>
+                        Join DataSync Pro and simplify the way
+                        your team manages information.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FORM ================= -->
+
+        <section class="signup-form-area">
+
+            <div class="signup-card">
+
+                <div class="mobile-brand">
+                    <div class="brand-icon">D</div>
+                    <span>DataSync Pro</span>
+                </div>
+
+                <p class="eyebrow">GET STARTED</p>
+
+                <h1>Sign Up</h1>
+
+                <p class="subtitle">
+                    Create your account and get started today.
+                </p>
+
+
+                <form>
+
+                    <!-- Full Name -->
+
+                    <div class="form-group">
+
+                        <label for="fullname">
+                            Full Name
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span><i class="fa-regular fa-user"></i></span>
+
+                            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span><i class="fa-regular fa-envelope"></i></span>
+
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Password -->
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span><i class="fa-solid fa-lock"></i></span>
+
+                            <input type="password" id="password" name="password" placeholder="Create a password"
+                                required>
+
+                            <button type="button" class="password-toggle" onclick="togglePassword()">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Submit -->
+
+                    <button type="submit" class="signup-btn">
+                        Create Account
+                    </button>
+
+                </form>
+
+
+                <p class="signin-link">
+                    Already have an account?
+
+                    <a href="signin.html">
+                        Sign In
+                    </a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script>
+
+        function togglePassword() {
+
+            const password =
+                document.getElementById("password");
+
+            if (password.type === "password") {
+
+                password.type = "text";
+
+            } else {
+
+                password.type = "password";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
