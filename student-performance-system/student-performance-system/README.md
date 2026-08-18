@@ -94,22 +94,13 @@ This project intentionally does not use arrays, objects, array methods, object m
 
 The included sample student has:
 
-- Name: ABEBE KEBEDE after text cleaning
-- Age: 22
+- Name: BINIAM GIRMA after text cleaning
+- Age: 21
 - Course: JavaScript
-- Score: 85
+- Score: 92
 - Attendance: 90%
-- Grade: B
+- Grade: A
 - Performance Status: Passed
 - Exam Eligibility: Eligible
 - Result: Pass
 - JavaScript Student: true
-
-## Submission
-
-Before submitting:
-
-- Replace the student name in `README.md` with your full name.
-- Make sure the JavaScript runs without errors.
-- Confirm that the project contains `index.html`, `script.js`, and `README.md`.
-- Upload the project to a public GitHub repository.
